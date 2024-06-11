@@ -64,7 +64,27 @@ namespace PrjHospital
 
         private void Principal_Load(object sender, EventArgs e)
         {
+            loadConfig();
+        }
 
+        private void loadConfig()
+        {
+            cboColor.Items.Add("Padrão (Sistema)");
+
+            cboColor.Items.Add("Tema Claro");
+            cboColor.Items.Add("Tema Escuro");
+
+            cboLanguage.Items.Add("PT-BR");
+            cboLanguage.Items.Add("EN-US");
+
+            cboNotific.Items.Add("Todos");
+
+            cboNotific.Items.Add("Somente Forúm");
+            cboNotific.Items.Add("Silencioso");
+
+            cboColor.SelectedIndex = 0;
+            cboLanguage.SelectedIndex = 0;
+            cboNotific.SelectedIndex = 0;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -83,6 +103,7 @@ namespace PrjHospital
 
                     
                     imagePerfil.BackgroundImage = imagem;
+                    pfpLateral.BackgroundImage = imagem;
 
                     
                     dialog.Dispose();
@@ -93,6 +114,26 @@ namespace PrjHospital
                 }
             }
 
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboNotific_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabConfig_Click(object sender, EventArgs e)
+        {
 
         }
     }

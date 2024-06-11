@@ -29,6 +29,7 @@ namespace PrjHospital
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.abasPrincipal = new System.Windows.Forms.TabControl();
@@ -44,31 +45,41 @@ namespace PrjHospital
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboLanguage = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboColor = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cboNotific = new System.Windows.Forms.ComboBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.imagePerfil = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pfpLateral = new System.Windows.Forms.PictureBox();
             this.btnConfig = new System.Windows.Forms.PictureBox();
             this.btnForum = new System.Windows.Forms.PictureBox();
             this.btnConsulta = new System.Windows.Forms.PictureBox();
             this.btnRegistro = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.abasPrincipal.SuspendLayout();
             this.tabPerfil.SuspendLayout();
             this.tabConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagePerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pfpLateral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConfig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegistro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,7 +87,7 @@ namespace PrjHospital
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pfpLateral);
             this.panel1.Controls.Add(this.btnConfig);
             this.panel1.Controls.Add(this.btnForum);
             this.panel1.Controls.Add(this.btnConsulta);
@@ -108,7 +119,16 @@ namespace PrjHospital
             // 
             // tabPerfil
             // 
-            this.tabPerfil.BackColor = System.Drawing.Color.Snow;
+            this.tabPerfil.BackColor = System.Drawing.Color.White;
+            this.tabPerfil.Controls.Add(this.label16);
+            this.tabPerfil.Controls.Add(this.button1);
+            this.tabPerfil.Controls.Add(this.label19);
+            this.tabPerfil.Controls.Add(this.label18);
+            this.tabPerfil.Controls.Add(this.label17);
+            this.tabPerfil.Controls.Add(this.label15);
+            this.tabPerfil.Controls.Add(this.label14);
+            this.tabPerfil.Controls.Add(this.label13);
+            this.tabPerfil.Controls.Add(this.label12);
             this.tabPerfil.Controls.Add(this.pictureBox3);
             this.tabPerfil.Controls.Add(this.imagePerfil);
             this.tabPerfil.Location = new System.Drawing.Point(4, 25);
@@ -152,13 +172,13 @@ namespace PrjHospital
             // tabConfig
             // 
             this.tabConfig.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tabConfig.Controls.Add(this.comboBox3);
+            this.tabConfig.Controls.Add(this.cboNotific);
             this.tabConfig.Controls.Add(this.label10);
-            this.tabConfig.Controls.Add(this.comboBox2);
+            this.tabConfig.Controls.Add(this.cboColor);
             this.tabConfig.Controls.Add(this.label11);
             this.tabConfig.Controls.Add(this.label9);
             this.tabConfig.Controls.Add(this.label7);
-            this.tabConfig.Controls.Add(this.comboBox1);
+            this.tabConfig.Controls.Add(this.cboLanguage);
             this.tabConfig.Controls.Add(this.label8);
             this.tabConfig.Controls.Add(this.label5);
             this.tabConfig.Controls.Add(this.label6);
@@ -172,6 +192,7 @@ namespace PrjHospital
             this.tabConfig.Size = new System.Drawing.Size(745, 469);
             this.tabConfig.TabIndex = 4;
             this.tabConfig.Text = "tabConfig";
+            this.tabConfig.Click += new System.EventHandler(this.tabConfig_Click);
             // 
             // label1
             // 
@@ -243,14 +264,14 @@ namespace PrjHospital
             this.label8.TabIndex = 6;
             this.label8.Text = "Linguagem do Aplicativo";
             // 
-            // comboBox1
+            // cboLanguage
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(614, 323);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(57, 31);
-            this.comboBox1.TabIndex = 7;
+            this.cboLanguage.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLanguage.FormattingEnabled = true;
+            this.cboLanguage.Location = new System.Drawing.Point(595, 323);
+            this.cboLanguage.Name = "cboLanguage";
+            this.cboLanguage.Size = new System.Drawing.Size(76, 31);
+            this.cboLanguage.TabIndex = 7;
             // 
             // label7
             // 
@@ -272,14 +293,14 @@ namespace PrjHospital
             this.label9.TabIndex = 9;
             this.label9.Text = "Configurações do Aplicativo";
             // 
-            // comboBox2
+            // cboColor
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(614, 395);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(57, 31);
-            this.comboBox2.TabIndex = 11;
+            this.cboColor.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboColor.FormattingEnabled = true;
+            this.cboColor.Location = new System.Drawing.Point(508, 395);
+            this.cboColor.Name = "cboColor";
+            this.cboColor.Size = new System.Drawing.Size(163, 31);
+            this.cboColor.TabIndex = 11;
             // 
             // label11
             // 
@@ -301,14 +322,28 @@ namespace PrjHospital
             this.label10.TabIndex = 12;
             this.label10.Text = "Lorem ipsum dolor sit amet consectetur adipiscing elit";
             // 
-            // comboBox3
+            // cboNotific
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(614, 183);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(57, 31);
-            this.comboBox3.TabIndex = 13;
+            this.cboNotific.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboNotific.FormattingEnabled = true;
+            this.cboNotific.Location = new System.Drawing.Point(508, 183);
+            this.cboNotific.Name = "cboNotific";
+            this.cboNotific.Size = new System.Drawing.Size(163, 31);
+            this.cboNotific.TabIndex = 13;
+            this.cboNotific.SelectedIndexChanged += new System.EventHandler(this.cboNotific_SelectedIndexChanged);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::PrjHospital.Properties.Resources.edit__1_;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(151, 144);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // imagePerfil
             // 
@@ -320,16 +355,16 @@ namespace PrjHospital
             this.imagePerfil.TabIndex = 7;
             this.imagePerfil.TabStop = false;
             // 
-            // pictureBox1
+            // pfpLateral
             // 
-            this.pictureBox1.BackgroundImage = global::PrjHospital.Properties.Resources.dog;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            this.pfpLateral.BackgroundImage = global::PrjHospital.Properties.Resources.dog;
+            this.pfpLateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pfpLateral.Location = new System.Drawing.Point(6, 20);
+            this.pfpLateral.Name = "pfpLateral";
+            this.pfpLateral.Size = new System.Drawing.Size(50, 50);
+            this.pfpLateral.TabIndex = 6;
+            this.pfpLateral.TabStop = false;
+            this.pfpLateral.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // btnConfig
             // 
@@ -379,18 +414,100 @@ namespace PrjHospital
             this.btnRegistro.TabStop = false;
             this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
-            // pictureBox3
+            // timer1
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::PrjHospital.Properties.Resources.edit__1_;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(151, 144);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(201, 74);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(242, 56);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Olá, Bombom";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(40, 202);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(72, 34);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Nome";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(40, 284);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 34);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Email";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(40, 367);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(96, 34);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Telefone";
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(43, 236);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(324, 34);
+            this.label17.TabIndex = 14;
+            this.label17.Text = "Luiz Ricardo de Souza";
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(39, 318);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(352, 34);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "bombom.etec@gmail.com";
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(39, 401);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(207, 34);
+            this.label19.TabIndex = 16;
+            this.label19.Text = "(11) 91231-2133";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
+            this.button1.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(537, 274);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 50);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Mudar Dados";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Poppins", 12F);
+            this.label16.Location = new System.Drawing.Point(522, 345);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(180, 56);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "Alterado pela ultima \r\nvez a [] dias";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Principal
             // 
@@ -409,13 +526,13 @@ namespace PrjHospital
             this.tabPerfil.PerformLayout();
             this.tabConfig.ResumeLayout(false);
             this.tabConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagePerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pfpLateral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConfig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegistro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -427,7 +544,7 @@ namespace PrjHospital
         private System.Windows.Forms.PictureBox btnForum;
         private System.Windows.Forms.PictureBox btnConsulta;
         private System.Windows.Forms.PictureBox btnRegistro;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pfpLateral;
         private System.Windows.Forms.TabControl abasPrincipal;
         private System.Windows.Forms.TabPage tabPerfil;
         private System.Windows.Forms.TabPage tabProntuario;
@@ -441,14 +558,24 @@ namespace PrjHospital
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cboLanguage;
+        private System.Windows.Forms.ComboBox cboNotific;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboColor;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox imagePerfil;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label16;
     }
 }
