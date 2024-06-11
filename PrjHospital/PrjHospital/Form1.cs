@@ -33,7 +33,9 @@ namespace PrjHospital
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-
+            Principal frm = new Principal();
+            frm.ShowDialog();
+            this.Close();
         }
 
         private void checkEye()
