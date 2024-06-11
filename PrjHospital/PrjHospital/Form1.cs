@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PrjHospital
@@ -17,71 +11,65 @@ namespace PrjHospital
         {
             InitializeComponent();
 
-            txtEmail.Text = "Insira seu e-mail";
-            txtEmail.ForeColor = Color.Gray;
-            txtPassword.Text = "Insira sua senha";
-            txtPassword.ForeColor = Color.Gray;
-
+            SetInitialTextAndColor(txtEmail, "Insira seu e-mail");
+            SetInitialTextAndColor(txtPassword, "Insira sua senha");
             txtPassword.PasswordChar = '\0';
+        }
+
+        private void SetInitialTextAndColor(TextBox textBox, string initialText)
+        {
+            textBox.Text = initialText;
+            textBox.ForeColor = Color.Gray;
         }
 
         private void btnForgetei_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://google.com");
-            Process.Start(sInfo);
+            Process.Start("https://google.com");
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            Principal frm = new Principal();
-            frm.ShowDialog();
-            this.Close();
+            string email = txtEmail.Text;
+            if (!string.IsNullOrEmpty(email) && 
+                !string.IsNullOrEmpty(txtPassword.Text) && 
+                email.Contains("@"))
+            {
+                Principal frm = new Principal();
+                frm.ShowDialog();
+                Close();
+            }
         }
 
-        private void checkEye()
+        private void TogglePasswordVisibility()
         {
-            if (txtPassword.PasswordChar == '*')
-            {
-                txtPassword.PasswordChar = '\0';
-                btnEye.BackgroundImage = Properties.Resources.zoio;
-            }
-            else if (txtPassword.PasswordChar == '\0')
-            {
-                btnEye.BackgroundImage = Properties.Resources.dormi;
-
-                txtPassword.PasswordChar = '*';
-            }
+            txtPassword.PasswordChar = (txtPassword.PasswordChar == '*') ? '\0' : '*';
+            btnEye.BackgroundImage = (txtPassword.PasswordChar == '*') ? 
+                Properties.Resources.dormi : Properties.Resources.zoio;
         }
 
         private void btnEye_Click(object sender, EventArgs e)
         {
-            checkEye();
+            TogglePasswordVisibility();
+        }
+
+        private void txtBox_Click(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox.ForeColor == Color.Gray)
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.Black;
+            }
         }
 
         private void txtEmail_Click(object sender, EventArgs e)
         {
-            txtEmail.Text = "";            
-            txtEmail.ForeColor = Color.Black;
-            TextBox txt = (sender as TextBox);
-            String texto = txt.Text;
-            if (texto.StartsWith("Insira"))
-            {
-                txt.Text = "";
-            }
-
+            txtBox_Click(sender, e);
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
-            txtPassword.Text = "";
-            txtPassword.ForeColor = Color.Black;
-            txtPassword.PasswordChar = '*';
-            btnEye.BackgroundImage = Properties.Resources.dormi;
-            txtPassword.PasswordChar = '*';
-
+            txtBox_Click(sender, e);
         }
-
-
-
     }
 }
