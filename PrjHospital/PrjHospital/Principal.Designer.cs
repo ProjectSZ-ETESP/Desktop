@@ -31,11 +31,6 @@ namespace PrjHospital
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnConfig = new System.Windows.Forms.PictureBox();
-            this.btnForum = new System.Windows.Forms.PictureBox();
-            this.btnConsulta = new System.Windows.Forms.PictureBox();
-            this.btnRegistro = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.abasPrincipal = new System.Windows.Forms.TabControl();
             this.tabPerfil = new System.Windows.Forms.TabPage();
             this.tabProntuario = new System.Windows.Forms.TabPage();
@@ -56,14 +51,24 @@ namespace PrjHospital
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.imagePerfil = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnConfig = new System.Windows.Forms.PictureBox();
+            this.btnForum = new System.Windows.Forms.PictureBox();
+            this.btnConsulta = new System.Windows.Forms.PictureBox();
+            this.btnRegistro = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.abasPrincipal.SuspendLayout();
+            this.tabPerfil.SuspendLayout();
+            this.tabConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagePerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConfig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegistro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.abasPrincipal.SuspendLayout();
-            this.tabConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,65 +85,6 @@ namespace PrjHospital
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(63, 498);
             this.panel1.TabIndex = 0;
-            // 
-            // btnConfig
-            // 
-            this.btnConfig.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnConfig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfig.BackgroundImage")));
-            this.btnConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConfig.Location = new System.Drawing.Point(15, 445);
-            this.btnConfig.Name = "btnConfig";
-            this.btnConfig.Size = new System.Drawing.Size(30, 30);
-            this.btnConfig.TabIndex = 5;
-            this.btnConfig.TabStop = false;
-            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
-            // 
-            // btnForum
-            // 
-            this.btnForum.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnForum.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnForum.BackgroundImage")));
-            this.btnForum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnForum.Location = new System.Drawing.Point(15, 299);
-            this.btnForum.Name = "btnForum";
-            this.btnForum.Size = new System.Drawing.Size(30, 30);
-            this.btnForum.TabIndex = 4;
-            this.btnForum.TabStop = false;
-            this.btnForum.Click += new System.EventHandler(this.btnForum_Click);
-            // 
-            // btnConsulta
-            // 
-            this.btnConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConsulta.BackgroundImage")));
-            this.btnConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConsulta.Location = new System.Drawing.Point(15, 196);
-            this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(30, 30);
-            this.btnConsulta.TabIndex = 3;
-            this.btnConsulta.TabStop = false;
-            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
-            // 
-            // btnRegistro
-            // 
-            this.btnRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRegistro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistro.BackgroundImage")));
-            this.btnRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegistro.Location = new System.Drawing.Point(15, 99);
-            this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(30, 30);
-            this.btnRegistro.TabIndex = 2;
-            this.btnRegistro.TabStop = false;
-            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::PrjHospital.Properties.Resources.dog;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // abasPrincipal
             // 
@@ -163,6 +109,8 @@ namespace PrjHospital
             // tabPerfil
             // 
             this.tabPerfil.BackColor = System.Drawing.Color.Snow;
+            this.tabPerfil.Controls.Add(this.pictureBox3);
+            this.tabPerfil.Controls.Add(this.imagePerfil);
             this.tabPerfil.Location = new System.Drawing.Point(4, 25);
             this.tabPerfil.Name = "tabPerfil";
             this.tabPerfil.Padding = new System.Windows.Forms.Padding(3);
@@ -362,6 +310,88 @@ namespace PrjHospital
             this.comboBox3.Size = new System.Drawing.Size(57, 31);
             this.comboBox3.TabIndex = 13;
             // 
+            // imagePerfil
+            // 
+            this.imagePerfil.BackgroundImage = global::PrjHospital.Properties.Resources.dog;
+            this.imagePerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imagePerfil.Location = new System.Drawing.Point(46, 42);
+            this.imagePerfil.Name = "imagePerfil";
+            this.imagePerfil.Size = new System.Drawing.Size(125, 125);
+            this.imagePerfil.TabIndex = 7;
+            this.imagePerfil.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::PrjHospital.Properties.Resources.dog;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // btnConfig
+            // 
+            this.btnConfig.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnConfig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfig.BackgroundImage")));
+            this.btnConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfig.Location = new System.Drawing.Point(15, 445);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Size = new System.Drawing.Size(30, 30);
+            this.btnConfig.TabIndex = 5;
+            this.btnConfig.TabStop = false;
+            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
+            // 
+            // btnForum
+            // 
+            this.btnForum.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnForum.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnForum.BackgroundImage")));
+            this.btnForum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnForum.Location = new System.Drawing.Point(15, 299);
+            this.btnForum.Name = "btnForum";
+            this.btnForum.Size = new System.Drawing.Size(30, 30);
+            this.btnForum.TabIndex = 4;
+            this.btnForum.TabStop = false;
+            this.btnForum.Click += new System.EventHandler(this.btnForum_Click);
+            // 
+            // btnConsulta
+            // 
+            this.btnConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConsulta.BackgroundImage")));
+            this.btnConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConsulta.Location = new System.Drawing.Point(15, 196);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(30, 30);
+            this.btnConsulta.TabIndex = 3;
+            this.btnConsulta.TabStop = false;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
+            // 
+            // btnRegistro
+            // 
+            this.btnRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnRegistro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistro.BackgroundImage")));
+            this.btnRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegistro.Location = new System.Drawing.Point(15, 99);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(30, 30);
+            this.btnRegistro.TabIndex = 2;
+            this.btnRegistro.TabStop = false;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::PrjHospital.Properties.Resources.edit__1_;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(151, 144);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,14 +404,18 @@ namespace PrjHospital
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormularioAtual_FormClosed);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panel1.ResumeLayout(false);
+            this.abasPrincipal.ResumeLayout(false);
+            this.tabPerfil.ResumeLayout(false);
+            this.tabPerfil.PerformLayout();
+            this.tabConfig.ResumeLayout(false);
+            this.tabConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagePerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConfig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegistro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.abasPrincipal.ResumeLayout(false);
-            this.tabConfig.ResumeLayout(false);
-            this.tabConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -414,5 +448,7 @@ namespace PrjHospital
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox imagePerfil;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

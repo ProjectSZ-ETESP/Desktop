@@ -66,5 +66,34 @@ namespace PrjHospital
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            var dialog = new OpenFileDialog();
+
+            dialog.Title = "Abrir Imagem";
+            dialog.Filter = "Image Files (*.bmp; *.jpg; *.jpeg; *.png; *.gif)|*.bmp;*.jpg;*.jpeg;*.png;*.gif";
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    
+                    Image imagem = Image.FromFile(dialog.FileName);
+
+                    
+                    imagePerfil.BackgroundImage = imagem;
+
+                    
+                    dialog.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocorreu um erro ao carregar a imagem: " + ex.Message);
+                }
+            }
+
+
+        }
     }
 }
