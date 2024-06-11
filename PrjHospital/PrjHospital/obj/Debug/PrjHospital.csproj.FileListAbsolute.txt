@@ -1,0 +1,10 @@
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\bin\Debug\PrjHospital.exe.config
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\bin\Debug\PrjHospital.exe
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\bin\Debug\PrjHospital.pdb
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.AssemblyReference.cache
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Form1.resources
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Properties.Resources.resources
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.GenerateResource.cache
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.CoreCompileInputs.cache
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\obj\Debug\PrjHospital.exe
+C:\Users\alenc\source\repos\PrjHospital\PrjHospital\obj\Debug\PrjHospital.pdb
