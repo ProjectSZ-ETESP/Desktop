@@ -29,15 +29,21 @@ namespace PrjHospital
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            string email = txtEmail.Text;
-            if (!string.IsNullOrEmpty(email) && 
-                !string.IsNullOrEmpty(txtPassword.Text) && 
-                email.Contains("@"))
-            {
-                Principal frm = new Principal();
-                frm.ShowDialog();
-                Close();
-            }
+            
+            //string email = txtEmail.Text;
+            //if (!string.IsNullOrEmpty(email) && 
+            //    !string.IsNullOrEmpty(txtPassword.Text) && 
+            //    email.Contains("@"))
+            //{
+            //    Principal frm = new Principal();
+            //    frm.ShowDialog();
+            //    Close();
+            //}
+
+            Principal frm = new Principal();
+            this.Hide();
+            frm.ShowDialog();
+            
         }
 
         private void TogglePasswordVisibility()
