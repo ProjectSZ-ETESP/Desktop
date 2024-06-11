@@ -133,5 +133,20 @@
   <ItemGroup>
     <None Include="Resources\edit %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line 29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-06-07 at 21.25.42.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

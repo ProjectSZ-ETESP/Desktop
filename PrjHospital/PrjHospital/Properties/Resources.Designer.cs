@@ -63,6 +63,16 @@ namespace PrjHospital.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aviso {
+            get {
+                object obj = ResourceManager.GetObject("aviso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar_month {
             get {
                 object obj = ResourceManager.GetObject("calendar_month", resourceCulture);
@@ -123,6 +133,16 @@ namespace PrjHospital.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_48 {
+            get {
+                object obj = ResourceManager.GetObject("Group 48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_65 {
             get {
                 object obj = ResourceManager.GetObject("Group 65", resourceCulture);
@@ -136,6 +156,16 @@ namespace PrjHospital.Properties {
         internal static System.Drawing.Bitmap groups {
             get {
                 object obj = ResourceManager.GetObject("groups", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_29 {
+            get {
+                object obj = ResourceManager.GetObject("Line 29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,6 +215,26 @@ namespace PrjHospital.Properties {
         internal static System.Drawing.Bitmap vector {
             get {
                 object obj = ResourceManager.GetObject("vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warning {
+            get {
+                object obj = ResourceManager.GetObject("warning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_06_07_at_21_25_42 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-06-07 at 21.25.42", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
