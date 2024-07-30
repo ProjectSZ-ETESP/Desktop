@@ -19,3 +19,14 @@ C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\De
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.exe
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.pdb
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Principal.resources
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.exe.config
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.exe
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.pdb
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csprojAssemblyReference.cache
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Form1.resources
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Principal.resources
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Properties.Resources.resources
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.GenerateResource.cache
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.CoreCompileInputs.cache
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.exe
+C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.pdb

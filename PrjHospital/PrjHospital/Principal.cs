@@ -234,5 +234,64 @@ namespace PrjHospital
         {
 
         }
+
+        private void CboColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox caixa = (sender as ComboBox);
+
+            string theme = caixa.Text;
+
+            changeTheme(theme);
+        }
+
+        private void changeTheme(String version)
+        {
+
+            String darkGreen = "#306844";
+            Color color = System.Drawing.ColorTranslator.FromHtml(darkGreen);
+
+
+            switch (version)
+            {
+                case "Tema Claro":
+
+                    foreach (TabPage tab in abasPrincipal.TabPages)
+                    {
+                        tab.BackColor = Color.White;
+
+                        foreach (var control in tab.Controls)
+                        {
+
+                            var label = control as Label;
+                            if (label == null) continue;
+                            label.ForeColor = Color.Black;
+                        }
+                    }
+                    break;
+                case "Tema Escuro":
+                       
+
+                    foreach (TabPage tab in abasPrincipal.TabPages)
+                    {
+                        tab.BackColor = Color.Black;
+
+                        foreach (var control in tab.Controls)
+                        {
+
+                            var label = control as Label;
+                            if (label == null) continue;
+                            label.ForeColor = Color.White;
+                        }
+                    }
+
+                    break;
+                default:
+
+                    break;
+            }
+
+            
+            
+        }
     }
 }

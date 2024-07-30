@@ -91,6 +91,15 @@ namespace PrjHospital.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a false.
+        /// </summary>
+        internal static string darkTheme {
+            get {
+                return ResourceManager.GetString("darkTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap dog {
