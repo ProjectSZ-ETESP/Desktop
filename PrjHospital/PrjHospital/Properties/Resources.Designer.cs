@@ -203,6 +203,16 @@ namespace PrjHospital.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rec {
+            get {
+                object obj = ResourceManager.GetObject("rec", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap recdiv {
             get {
                 object obj = ResourceManager.GetObject("recdiv", resourceCulture);

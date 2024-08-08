@@ -30,7 +30,6 @@ namespace PrjHospital
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaLog));
-            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnForgetei = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -39,25 +38,16 @@ namespace PrjHospital
             this.btnLogar = new System.Windows.Forms.PictureBox();
             this.btnEye = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEye)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPassword.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.txtPassword.Location = new System.Drawing.Point(23, 276);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(247, 31);
-            this.txtPassword.TabIndex = 11;
-            this.txtPassword.Text = "a";
-            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // btnForgetei
             // 
@@ -75,27 +65,29 @@ namespace PrjHospital
             // txtEmail
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(23, 216);
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtEmail.Location = new System.Drawing.Point(20, 12);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(247, 31);
+            this.txtEmail.Size = new System.Drawing.Size(247, 24);
             this.txtEmail.TabIndex = 9;
             this.txtEmail.Text = "a";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
+            this.txtEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(124)))), ((int)(((byte)(100)))));
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.cboRemember);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnLogar);
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.btnEye);
             this.panel1.Controls.Add(this.btnForgetei);
-            this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(295, 600);
@@ -140,10 +132,10 @@ namespace PrjHospital
             // btnEye
             // 
             this.btnEye.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnEye.BackColor = System.Drawing.Color.White;
+            this.btnEye.BackColor = System.Drawing.Color.Transparent;
             this.btnEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEye.BackgroundImage")));
             this.btnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEye.Location = new System.Drawing.Point(240, 279);
+            this.btnEye.Location = new System.Drawing.Point(242, 12);
             this.btnEye.Name = "btnEye";
             this.btnEye.Size = new System.Drawing.Size(26, 26);
             this.btnEye.TabIndex = 13;
@@ -160,6 +152,44 @@ namespace PrjHospital
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip1_ItemClicked);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::PrjHospital.Properties.Resources.rec;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.txtEmail);
+            this.panel2.Location = new System.Drawing.Point(3, 218);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(289, 55);
+            this.panel2.TabIndex = 17;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::PrjHospital.Properties.Resources.rec;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.txtPassword);
+            this.panel3.Controls.Add(this.btnEye);
+            this.panel3.Location = new System.Drawing.Point(2, 273);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(289, 55);
+            this.panel3.TabIndex = 18;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.txtPassword.Location = new System.Drawing.Point(21, 12);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(215, 24);
+            this.txtPassword.TabIndex = 11;
+            this.txtPassword.Text = "a";
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // telaLog
             // 
@@ -182,6 +212,10 @@ namespace PrjHospital
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEye)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,12 +226,14 @@ namespace PrjHospital
         private System.Windows.Forms.PictureBox btnLogar;
         private System.Windows.Forms.PictureBox btnEye;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label btnForgetei;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.CheckBox cboRemember;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }
 

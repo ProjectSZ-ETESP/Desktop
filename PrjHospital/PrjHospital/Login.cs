@@ -70,7 +70,7 @@ namespace PrjHospital
             if (textBox.ForeColor == Color.Gray)
             {
                 textBox.Text = "";
-                textBox.ForeColor = Color.Black;
+                textBox.ForeColor = Color.Gray;
             }
         }
 
@@ -118,6 +118,11 @@ namespace PrjHospital
         }
 
         private void MenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void TxtEmail_TextChanged(object sender, EventArgs e)
         {
 
         }
