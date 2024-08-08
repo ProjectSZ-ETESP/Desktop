@@ -233,14 +233,15 @@ namespace PrjHospital
             this.tabPerfil.Size = new System.Drawing.Size(808, 558);
             this.tabPerfil.TabIndex = 0;
             this.tabPerfil.Text = "tabPerfil";
+            this.tabPerfil.Click += new System.EventHandler(this.TabPerfil_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Poppins", 8F);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label16.Location = new System.Drawing.Point(619, 383);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(123, 38);
+            this.label16.Size = new System.Drawing.Size(102, 26);
             this.label16.TabIndex = 18;
             this.label16.Text = "Alterado pela ultima \r\nvez a [] dias";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -248,7 +249,7 @@ namespace PrjHospital
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
-            this.button1.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(603, 320);
             this.button1.Name = "button1";
@@ -259,7 +260,7 @@ namespace PrjHospital
             // 
             // label19
             // 
-            this.label19.Font = new System.Drawing.Font("Poppins Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(43, 454);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(207, 34);
@@ -268,7 +269,7 @@ namespace PrjHospital
             // 
             // label18
             // 
-            this.label18.Font = new System.Drawing.Font("Poppins Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(46, 354);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(352, 34);
@@ -277,7 +278,7 @@ namespace PrjHospital
             // 
             // label17
             // 
-            this.label17.Font = new System.Drawing.Font("Poppins Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(43, 250);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(324, 34);
@@ -287,40 +288,40 @@ namespace PrjHospital
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Poppins SemiBold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(43, 420);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 34);
+            this.label15.Size = new System.Drawing.Size(85, 24);
             this.label15.TabIndex = 12;
             this.label15.Text = "Telefone";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Poppins SemiBold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(43, 320);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 34);
+            this.label14.Size = new System.Drawing.Size(57, 24);
             this.label14.TabIndex = 11;
             this.label14.Text = "Email";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Poppins SemiBold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(43, 216);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 34);
+            this.label13.Size = new System.Drawing.Size(62, 24);
             this.label13.TabIndex = 10;
             this.label13.Text = "Nome";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(339, 65);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(242, 56);
+            this.label12.Size = new System.Drawing.Size(214, 37);
             this.label12.TabIndex = 9;
             this.label12.Text = "Olá, Bombom";
             // 
@@ -368,7 +369,7 @@ namespace PrjHospital
             this.tabRegistro.Controls.Add(this.txtNome);
             this.tabRegistro.Controls.Add(this.label21);
             this.tabRegistro.Controls.Add(this.label20);
-            this.tabRegistro.Font = new System.Drawing.Font("Poppins", 12F);
+            this.tabRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tabRegistro.Location = new System.Drawing.Point(4, 25);
             this.tabRegistro.Name = "tabRegistro";
             this.tabRegistro.Padding = new System.Windows.Forms.Padding(3);
@@ -392,10 +393,10 @@ namespace PrjHospital
             // 
             this.rdoFem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rdoFem.AutoSize = true;
-            this.rdoFem.Font = new System.Drawing.Font("Poppins", 10F);
-            this.rdoFem.Location = new System.Drawing.Point(117, 487);
+            this.rdoFem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.rdoFem.Location = new System.Drawing.Point(127, 495);
             this.rdoFem.Name = "rdoFem";
-            this.rdoFem.Size = new System.Drawing.Size(93, 29);
+            this.rdoFem.Size = new System.Drawing.Size(83, 21);
             this.rdoFem.TabIndex = 26;
             this.rdoFem.TabStop = true;
             this.rdoFem.Text = "Feminino";
@@ -405,10 +406,10 @@ namespace PrjHospital
             // 
             this.rdoMasc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rdoMasc.AutoSize = true;
-            this.rdoMasc.Font = new System.Drawing.Font("Poppins", 10F);
-            this.rdoMasc.Location = new System.Drawing.Point(117, 456);
+            this.rdoMasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.rdoMasc.Location = new System.Drawing.Point(128, 464);
             this.rdoMasc.Name = "rdoMasc";
-            this.rdoMasc.Size = new System.Drawing.Size(100, 29);
+            this.rdoMasc.Size = new System.Drawing.Size(89, 21);
             this.rdoMasc.TabIndex = 25;
             this.rdoMasc.TabStop = true;
             this.rdoMasc.Text = "Masculino";
@@ -417,7 +418,7 @@ namespace PrjHospital
             // btnAddFoto
             // 
             this.btnAddFoto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddFoto.Font = new System.Drawing.Font("Poppins", 10F);
+            this.btnAddFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAddFoto.Location = new System.Drawing.Point(627, 165);
             this.btnAddFoto.Name = "btnAddFoto";
             this.btnAddFoto.Size = new System.Drawing.Size(135, 65);
@@ -442,20 +443,20 @@ namespace PrjHospital
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEmail.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(466, 379);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(266, 31);
+            this.txtEmail.Size = new System.Drawing.Size(266, 26);
             this.txtEmail.TabIndex = 23;
             // 
             // label26
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(460, 343);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(68, 34);
+            this.label26.Size = new System.Drawing.Size(57, 24);
             this.label26.TabIndex = 22;
             this.label26.Text = "Email";
             // 
@@ -468,17 +469,17 @@ namespace PrjHospital
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.PromptChar = ' ';
             this.txtTelefone.ResetOnPrompt = false;
-            this.txtTelefone.Size = new System.Drawing.Size(134, 31);
+            this.txtTelefone.Size = new System.Drawing.Size(134, 26);
             this.txtTelefone.TabIndex = 21;
             // 
             // label25
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(460, 243);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(96, 34);
+            this.label25.Size = new System.Drawing.Size(85, 24);
             this.label25.TabIndex = 20;
             this.label25.Text = "Telefone";
             // 
@@ -486,10 +487,10 @@ namespace PrjHospital
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(111, 428);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(59, 34);
+            this.label24.Size = new System.Drawing.Size(54, 24);
             this.label24.TabIndex = 18;
             this.label24.Text = "Sexo";
             // 
@@ -502,7 +503,7 @@ namespace PrjHospital
             this.txtDataNasc.Name = "txtDataNasc";
             this.txtDataNasc.PromptChar = ' ';
             this.txtDataNasc.ResetOnPrompt = false;
-            this.txtDataNasc.Size = new System.Drawing.Size(114, 31);
+            this.txtDataNasc.Size = new System.Drawing.Size(114, 26);
             this.txtDataNasc.TabIndex = 17;
             this.txtDataNasc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDataNasc.ValidatingType = typeof(System.DateTime);
@@ -512,10 +513,10 @@ namespace PrjHospital
             // 
             this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(111, 339);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(212, 34);
+            this.label23.Size = new System.Drawing.Size(179, 24);
             this.label23.TabIndex = 16;
             this.label23.Text = "Data de Nascimento";
             // 
@@ -528,7 +529,7 @@ namespace PrjHospital
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.PromptChar = ' ';
             this.txtCPF.ResetOnPrompt = false;
-            this.txtCPF.Size = new System.Drawing.Size(206, 31);
+            this.txtCPF.Size = new System.Drawing.Size(206, 26);
             this.txtCPF.TabIndex = 15;
             this.txtCPF.Text = "12345678910";
             this.txtCPF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -540,10 +541,10 @@ namespace PrjHospital
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(111, 236);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(51, 34);
+            this.label22.Size = new System.Drawing.Size(47, 24);
             this.label22.TabIndex = 13;
             this.label22.Text = "CPF";
             // 
@@ -551,20 +552,20 @@ namespace PrjHospital
             // 
             this.txtNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNome.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNome.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(117, 180);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(252, 31);
+            this.txtNome.Size = new System.Drawing.Size(252, 26);
             this.txtNome.TabIndex = 12;
             // 
             // label21
             // 
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(111, 143);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(173, 34);
+            this.label21.Size = new System.Drawing.Size(148, 24);
             this.label21.TabIndex = 11;
             this.label21.Text = "Nome Completo";
             // 
@@ -572,10 +573,10 @@ namespace PrjHospital
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Poppins SemiBold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(88, 86);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(281, 42);
+            this.label20.Size = new System.Drawing.Size(250, 29);
             this.label20.TabIndex = 10;
             this.label20.Text = "Registro de Pacientes";
             // 
@@ -598,7 +599,7 @@ namespace PrjHospital
             this.tabForum.Location = new System.Drawing.Point(4, 25);
             this.tabForum.Name = "tabForum";
             this.tabForum.Padding = new System.Windows.Forms.Padding(3);
-            this.tabForum.Size = new System.Drawing.Size(745, 489);
+            this.tabForum.Size = new System.Drawing.Size(808, 558);
             this.tabForum.TabIndex = 3;
             this.tabForum.Text = "tabForum";
             this.tabForum.Click += new System.EventHandler(this.tabForum_Click);
@@ -618,7 +619,7 @@ namespace PrjHospital
             // label29
             // 
             this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label29.Font = new System.Drawing.Font("Poppins", 10F);
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label29.Location = new System.Drawing.Point(9, 97);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(433, 50);
@@ -653,10 +654,10 @@ namespace PrjHospital
             // 
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Poppins ExtraLight", 12F, System.Drawing.FontStyle.Bold);
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label28.Location = new System.Drawing.Point(167, 44);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(63, 28);
+            this.label28.Size = new System.Drawing.Size(57, 20);
             this.label28.TabIndex = 18;
             this.label28.Text = "Há 2h";
             // 
@@ -664,10 +665,10 @@ namespace PrjHospital
             // 
             this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Poppins SemiBold", 14F, System.Drawing.FontStyle.Bold);
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label27.Location = new System.Drawing.Point(70, 40);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(91, 34);
+            this.label27.Size = new System.Drawing.Size(82, 24);
             this.label27.TabIndex = 17;
             this.label27.Text = "Alencar";
             // 
@@ -696,7 +697,7 @@ namespace PrjHospital
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Poppins", 12F);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox1.Location = new System.Drawing.Point(98, 34);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -750,121 +751,121 @@ namespace PrjHospital
             // cboNotific
             // 
             this.cboNotific.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboNotific.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboNotific.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNotific.FormattingEnabled = true;
             this.cboNotific.Location = new System.Drawing.Point(508, 183);
             this.cboNotific.Name = "cboNotific";
-            this.cboNotific.Size = new System.Drawing.Size(163, 31);
+            this.cboNotific.Size = new System.Drawing.Size(163, 24);
             this.cboNotific.TabIndex = 13;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(64, 425);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(309, 19);
+            this.label10.Size = new System.Drawing.Size(256, 13);
             this.label10.TabIndex = 12;
             this.label10.Text = "Lorem ipsum dolor sit amet consectetur adipiscing elit";
             // 
             // cboColor
             // 
             this.cboColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboColor.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboColor.FormattingEnabled = true;
             this.cboColor.Location = new System.Drawing.Point(508, 395);
             this.cboColor.Name = "cboColor";
-            this.cboColor.Size = new System.Drawing.Size(163, 31);
+            this.cboColor.Size = new System.Drawing.Size(163, 24);
             this.cboColor.TabIndex = 11;
             this.cboColor.SelectedIndexChanged += new System.EventHandler(this.CboColor_SelectedIndexChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(62, 391);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(166, 28);
+            this.label11.Size = new System.Drawing.Size(161, 20);
             this.label11.TabIndex = 10;
             this.label11.Text = "Esquema de Cores";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Poppins SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(23, 269);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(336, 39);
+            this.label9.Size = new System.Drawing.Size(309, 26);
             this.label9.TabIndex = 9;
             this.label9.Text = "Configurações do Aplicativo";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(64, 353);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(309, 19);
+            this.label7.Size = new System.Drawing.Size(256, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "Lorem ipsum dolor sit amet consectetur adipiscing elit";
             // 
             // cboLanguage
             // 
             this.cboLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLanguage.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLanguage.FormattingEnabled = true;
             this.cboLanguage.Location = new System.Drawing.Point(595, 323);
             this.cboLanguage.Name = "cboLanguage";
-            this.cboLanguage.Size = new System.Drawing.Size(76, 31);
+            this.cboLanguage.Size = new System.Drawing.Size(76, 24);
             this.cboLanguage.TabIndex = 7;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(62, 319);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(215, 28);
+            this.label8.Size = new System.Drawing.Size(204, 20);
             this.label8.TabIndex = 6;
             this.label8.Text = "Linguagem do Aplicativo";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(64, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(190, 19);
+            this.label5.Size = new System.Drawing.Size(159, 13);
             this.label5.TabIndex = 5;
             this.label5.Text = "Alterado pela ultima vez a [] dias";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(62, 180);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(205, 28);
+            this.label6.Size = new System.Drawing.Size(195, 20);
             this.label6.TabIndex = 4;
             this.label6.Text = "Configurar notificações";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(64, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 19);
+            this.label4.Size = new System.Drawing.Size(159, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Alterado pela ultima vez a [] dias";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label3.Location = new System.Drawing.Point(614, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 28);
+            this.label3.Size = new System.Drawing.Size(63, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Alterar";
             this.label3.Click += new System.EventHandler(this.senhaUrl_Click);
@@ -872,20 +873,20 @@ namespace PrjHospital
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(62, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 28);
+            this.label2.Size = new System.Drawing.Size(117, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Alterar senha";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(23, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(293, 39);
+            this.label1.Size = new System.Drawing.Size(268, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Configurações de Conta";
             // 

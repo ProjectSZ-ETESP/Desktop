@@ -71,6 +71,8 @@ namespace PrjHospital
             loadConfig();
             maskCPF();
             reset();
+            
+
         }
 
         private void maskCPF()
@@ -97,6 +99,9 @@ namespace PrjHospital
             cboColor.SelectedIndex = 0;
             cboLanguage.SelectedIndex = 0;
             cboNotific.SelectedIndex = 0;
+
+            changeTheme(Properties.Settings.Default.theme);
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -237,6 +242,7 @@ namespace PrjHospital
 
         private void CboColor_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             ComboBox caixa = (sender as ComboBox);
 
             string theme = caixa.Text;
@@ -250,9 +256,28 @@ namespace PrjHospital
             String darkGreen = "#306844";
             Color color = System.Drawing.ColorTranslator.FromHtml(darkGreen);
 
-
             switch (version)
             {
+                
+                case "Tema Escuro":                       
+
+                    foreach (TabPage tab in abasPrincipal.TabPages)
+                    {
+                        tab.BackColor = Color.Black;
+
+                        foreach (var control in tab.Controls)
+                        {
+
+                            var label = control as Label;
+                            if (label == null) continue;
+                            label.ForeColor = Color.White;
+                            Properties.Settings.Default.theme = "Tema Escuro";
+
+                            cboColor.SelectedIndex = 2;
+                        }
+                    }
+
+                    break;
                 case "Tema Claro":
 
                     foreach (TabPage tab in abasPrincipal.TabPages)
@@ -265,33 +290,20 @@ namespace PrjHospital
                             var label = control as Label;
                             if (label == null) continue;
                             label.ForeColor = Color.Black;
+                            Properties.Settings.Default.theme = "Tema Claro";
+                            cboColor.SelectedIndex = 1;
                         }
                     }
                     break;
-                case "Tema Escuro":
-                       
 
-                    foreach (TabPage tab in abasPrincipal.TabPages)
-                    {
-                        tab.BackColor = Color.Black;
-
-                        foreach (var control in tab.Controls)
-                        {
-
-                            var label = control as Label;
-                            if (label == null) continue;
-                            label.ForeColor = Color.White;
-                        }
-                    }
-
-                    break;
-                default:
-
-                    break;
             }
 
-            
-            
+            Properties.Settings.Default.Save();
+        }
+
+        private void TabPerfil_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -91,15 +91,6 @@ namespace PrjHospital.Properties {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a false.
-        /// </summary>
-        internal static string darkTheme {
-            get {
-                return ResourceManager.GetString("darkTheme", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap dog {
@@ -214,6 +205,16 @@ namespace PrjHospital.Properties {
         internal static System.Drawing.Bitmap recdiv {
             get {
                 object obj = ResourceManager.GetObject("recdiv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tela_Login {
+            get {
+                object obj = ResourceManager.GetObject("Tela_Login", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

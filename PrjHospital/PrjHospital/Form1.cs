@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace PrjHospital
 {
-    public partial class Form1 : Form
+    public partial class telaLog : Form
     {
-        public Form1()
+        public telaLog()
         {
             InitializeComponent();
 
@@ -76,6 +76,42 @@ namespace PrjHospital
         private void txtPassword_Click(object sender, EventArgs e)
         {
             txtBox_Click(sender, e);
+        }
+
+        string tema;
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            tema = Properties.Settings.Default.theme;
+
+            
+            Color white = System.Drawing.ColorTranslator.FromHtml("#E3F0EB");
+
+            
+            Color dark = System.Drawing.ColorTranslator.FromHtml("#387c64");
+
+            switch (tema)
+            {
+                case "Tema Claro":
+                    panel1.BackColor = dark;
+                    menuStrip1.BackgroundImage = Properties.Resources.map_vector;
+                    btnForgetei.ForeColor = Color.White;
+ 
+                    break;
+                case "Tema Escuro":
+                    panel1.BackColor = white;
+                    menuStrip1.BackgroundImage = Properties.Resources.Tela_Login;
+                    btnForgetei.ForeColor = Color.Black;
+
+
+                    break;
+            }
+        }
+
+        private void MenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

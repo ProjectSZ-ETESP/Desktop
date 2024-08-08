@@ -175,8 +175,7 @@
   <data name="aviso" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aviso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="darkTheme" xml:space="preserve">
-    <value>false</value>
-    <comment>constante de tema de cores where false = claro;true = dark</comment>
+  <data name="Tela_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tela Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

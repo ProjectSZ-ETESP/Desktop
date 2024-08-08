@@ -30,3 +30,14 @@ C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospit
 C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.CoreCompileInputs.cache
 C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.exe
 C:\Users\Lab_ETESP\Documents\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.pdb
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.exe.config
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.exe
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.pdb
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csprojAssemblyReference.cache
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Principal.resources
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Properties.Resources.resources
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.GenerateResource.cache
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.CoreCompileInputs.cache
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.exe
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.pdb
+C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.telaLog.resources
