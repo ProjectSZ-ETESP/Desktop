@@ -253,9 +253,6 @@ namespace PrjHospital
         private void changeTheme(String version)
         {
 
-            String darkGreen = "#306844";
-            Color color = System.Drawing.ColorTranslator.FromHtml(darkGreen);
-
             switch (version)
             {
                 
@@ -287,9 +284,10 @@ namespace PrjHospital
                         foreach (var control in tab.Controls)
                         {
 
+                            Color back = System.Drawing.ColorTranslator.FromHtml("#161817");
                             var label = control as Label;
                             if (label == null) continue;
-                            label.ForeColor = Color.Black;
+                            label.ForeColor = back;
                             Properties.Settings.Default.theme = "Tema Claro";
                             cboColor.SelectedIndex = 1;
                         }
@@ -304,6 +302,16 @@ namespace PrjHospital
         private void TabPerfil_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.remember = false;
+            Properties.Settings.Default.Save();
+
+            PrjHospital.telaLog log = new PrjHospital.telaLog();
+            this.Hide();
+            log.ShowDialog();
         }
     }
 }

@@ -95,6 +95,7 @@ namespace PrjHospital
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.panelNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pfpLateral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnConfig)).BeginInit();
@@ -115,6 +116,7 @@ namespace PrjHospital
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             this.SuspendLayout();
             // 
             // panelNav
@@ -122,6 +124,7 @@ namespace PrjHospital
             this.panelNav.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
+            this.panelNav.Controls.Add(this.btnLogout);
             this.panelNav.Controls.Add(this.pfpLateral);
             this.panelNav.Controls.Add(this.btnConfig);
             this.panelNav.Controls.Add(this.btnForum);
@@ -148,7 +151,7 @@ namespace PrjHospital
             this.btnConfig.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnConfig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfig.BackgroundImage")));
             this.btnConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConfig.Location = new System.Drawing.Point(15, 534);
+            this.btnConfig.Location = new System.Drawing.Point(15, 458);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(30, 30);
             this.btnConfig.TabIndex = 5;
@@ -160,7 +163,7 @@ namespace PrjHospital
             this.btnForum.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnForum.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnForum.BackgroundImage")));
             this.btnForum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnForum.Location = new System.Drawing.Point(15, 388);
+            this.btnForum.Location = new System.Drawing.Point(15, 312);
             this.btnForum.Name = "btnForum";
             this.btnForum.Size = new System.Drawing.Size(30, 30);
             this.btnForum.TabIndex = 4;
@@ -172,7 +175,7 @@ namespace PrjHospital
             this.btnConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConsulta.BackgroundImage")));
             this.btnConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConsulta.Location = new System.Drawing.Point(15, 285);
+            this.btnConsulta.Location = new System.Drawing.Point(15, 209);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(30, 30);
             this.btnConsulta.TabIndex = 3;
@@ -184,7 +187,7 @@ namespace PrjHospital
             this.btnRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRegistro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistro.BackgroundImage")));
             this.btnRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegistro.Location = new System.Drawing.Point(15, 210);
+            this.btnRegistro.Location = new System.Drawing.Point(15, 134);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(30, 30);
             this.btnRegistro.TabIndex = 2;
@@ -890,6 +893,18 @@ namespace PrjHospital
             this.label1.TabIndex = 0;
             this.label1.Text = "Configurações de Conta";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnLogout.BackgroundImage = global::PrjHospital.Properties.Resources.logout;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogout.Location = new System.Drawing.Point(19, 542);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(25, 25);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -928,6 +943,7 @@ namespace PrjHospital
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabConfig.ResumeLayout(false);
             this.tabConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -999,5 +1015,6 @@ namespace PrjHospital
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btnLogout;
     }
 }

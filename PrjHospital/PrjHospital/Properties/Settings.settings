@@ -5,5 +5,8 @@
     <Setting Name="theme" Type="System.String" Scope="User">
       <Value Profile="(Default)">Tema Claro</Value>
     </Setting>
+    <Setting Name="remember" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
