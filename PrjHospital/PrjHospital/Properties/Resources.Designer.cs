@@ -183,6 +183,16 @@ namespace PrjHospital.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout {
+            get {
+                object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap map_vector {
             get {
                 object obj = ResourceManager.GetObject("map-vector", resourceCulture);
@@ -191,11 +201,12 @@ namespace PrjHospital.Properties {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a .
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static string pfp {
+        internal static System.Drawing.Bitmap rec {
             get {
-                return ResourceManager.GetString("pfp", resourceCulture);
+                object obj = ResourceManager.GetObject("rec", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -205,6 +216,16 @@ namespace PrjHospital.Properties {
         internal static System.Drawing.Bitmap recdiv {
             get {
                 object obj = ResourceManager.GetObject("recdiv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tela_Login {
+            get {
+                object obj = ResourceManager.GetObject("Tela_Login", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

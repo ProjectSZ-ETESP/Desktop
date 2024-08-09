@@ -71,6 +71,8 @@ namespace PrjHospital
             loadConfig();
             maskCPF();
             reset();
+            
+
         }
 
         private void maskCPF()
@@ -97,6 +99,9 @@ namespace PrjHospital
             cboColor.SelectedIndex = 0;
             cboLanguage.SelectedIndex = 0;
             cboNotific.SelectedIndex = 0;
+
+            changeTheme(Properties.Settings.Default.theme);
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -233,6 +238,80 @@ namespace PrjHospital
         private void tabForum_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CboColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            ComboBox caixa = (sender as ComboBox);
+
+            string theme = caixa.Text;
+
+            changeTheme(theme);
+        }
+
+        private void changeTheme(String version)
+        {
+
+            switch (version)
+            {
+                
+                case "Tema Escuro":                       
+
+                    foreach (TabPage tab in abasPrincipal.TabPages)
+                    {
+                        tab.BackColor = Color.Black;
+
+                        foreach (var control in tab.Controls)
+                        {
+
+                            var label = control as Label;
+                            if (label == null) continue;
+                            label.ForeColor = Color.White;
+                            Properties.Settings.Default.theme = "Tema Escuro";
+
+                            cboColor.SelectedIndex = 2;
+                        }
+                    }
+
+                    break;
+                case "Tema Claro":
+
+                    foreach (TabPage tab in abasPrincipal.TabPages)
+                    {
+                        tab.BackColor = Color.White;
+
+                        foreach (var control in tab.Controls)
+                        {
+
+                            Color back = System.Drawing.ColorTranslator.FromHtml("#161817");
+                            var label = control as Label;
+                            if (label == null) continue;
+                            label.ForeColor = back;
+                            Properties.Settings.Default.theme = "Tema Claro";
+                            cboColor.SelectedIndex = 1;
+                        }
+                    }
+                    break;
+
+            }
+
+            Properties.Settings.Default.Save();
+        }
+
+        private void TabPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.remember = false;
+            Properties.Settings.Default.Save();
+
+            PrjHospital.telaLog log = new PrjHospital.telaLog();
+            this.Hide();
+            log.ShowDialog();
         }
     }
 }
