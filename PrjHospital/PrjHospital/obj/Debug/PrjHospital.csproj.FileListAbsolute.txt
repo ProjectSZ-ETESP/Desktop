@@ -12,7 +12,6 @@ C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\bin\De
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.exe
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\bin\Debug\PrjHospital.pdb
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.AssemblyReference.cache
-C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Form1.resources
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.Properties.Resources.resources
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.GenerateResource.cache
 C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.csproj.CoreCompileInputs.cache
@@ -41,3 +40,4 @@ C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\Pr
 C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.exe
 C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.pdb
 C:\Users\Lab_ETESP\Documents\GitHub\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.telaLog.resources
+C:\Users\alenc\OneDrive\Documentos\Arkham\Desktop\PrjHospital\PrjHospital\obj\Debug\PrjHospital.telaLog.resources
